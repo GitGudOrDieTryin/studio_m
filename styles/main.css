@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    padding: 0 16px;
+}
+
+h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.0025em;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.0015em;  
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    /* Body 1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+text-align: center;
+letter-spacing: 0.005em;
+margin: 0;
+padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cta {
+    letter-spacing: 0.0225em;
+    font-weight: 600;
+    font-size: 1.125em;
+    text-decoration: none;
+    padding: 12px 24px;
+    color: white;
+    background-color: #1E1E1E;
+}
+
+/* HERO SPACE */
+
+.hero-space {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    left: -16px;
+
+    background-image: url("../images/heroSpaceImage.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-space header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: calc(100vw - 32px);
+    height: 52px;
+    left: 16px;
+    top: 16px;
+}
+
+.hero-space div h1{
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 4em;
+    margin-bottom: 128px;
+}
+.hero-space div a  {
+    color: #1E1E1E;
+    background-color: white;
+}
+
+
+/* OUR FAVORITE PROJECTS */
+
+.our-favorite-projects {
+    margin: 64px 0 0 0;
+}
+
+.our-favorite-projects ul li {
+    
+    padding: 32px 0; 
+    text-align: center;
+}
+
+.our-favorite-projects ul li h3 {
+padding-top: 16px;
+}
+
+.our-favorite-projects ul li p {
+padding-top: 8px;
+}
+
+.our-favorite-projects ul li img {
+    width: 100%;
+}
+
+/* FEATURED LISTING */
+
+.featured-listing-content::before{
+content: "";    
+background-image: url(../images/cyanRectange.svg);
+background-size: cover;
+background-position: 75% 20%;
+background-repeat: no-repeat;
+
+}
+
+.featured-listing {
+    margin: 32px 0 0 0;
+    position: relative;
+    
+}
+
+.featured-listing-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    margin: 48px 0 24px 0;
+}
+
+
+
+.featured-listing-info li{
+    margin-bottom: 24px;
+}
+
+.featured-listing-info li:nth-child(4){
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.feaatured-listing-img1 img{
+    width: 100%;
+}
+
+.featured-listing-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 32px 0;
+}
+.featured-listing-selector img {
+    padding: 0 15px;
+}
+
+@media only screen and (max-width: 650px){
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .feaatured-listing-img2 {
+        display: none;
+    }
+}
