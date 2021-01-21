@@ -140,17 +140,19 @@ padding-top: 8px;
 /* FEATURED LISTING */
 
 .featured-listing-content::before{
-content: "";    
-background-image: url(../images/cyanRectange.svg);
-background-size: cover;
-background-position: 75% 20%;
-background-repeat: no-repeat;
+    content: "";    
+    background-color: #BCF6FB;
+    width: 75%;
+    right: -16px;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
 
 }
 
 .featured-listing {
     margin: 32px 0 0 0;
-    position: relative;
+    position: relative; 
     
 }
 
