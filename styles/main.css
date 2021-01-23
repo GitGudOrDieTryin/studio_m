@@ -7,6 +7,10 @@ body {
     padding: 0 16px;
 }
 
+h1 {
+    font-weight: 400;
+}
+
 h2 {
     font-family: Playfair Display;
     font-style: normal;
@@ -137,17 +141,23 @@ padding-top: 8px;
     width: 100%;
 }
 
-/* FEATURED LISTING */
+/* FEATURED FISTING */
 
-.featured-listing-content::before{
-    content: "";    
+.featured-listing-content {
+    position: relative;
+    padding: 32px 0;
+    margin: 32px 0;
+}
+
+.cyan-bg {
     background-color: #BCF6FB;
-    width: 75%;
-    right: -16px;
-    height: 100%;
     position: absolute;
-    z-index: -2;
-
+    z-index: -1;
+    margin: 0;
+    width: 100%;
+    right: -30%;
+    top:0;
+    bottom:0;
 }
 
 .featured-listing {
@@ -160,8 +170,6 @@ padding-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0px;
-    margin: 48px 0 24px 0;
 }
 
 
@@ -185,10 +193,14 @@ padding-top: 8px;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    margin: 32px 0;
+    margin: 32px 0 0 0;
 }
 .featured-listing-selector img {
     padding: 0 15px;
+}
+
+.our-services ul li img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 650px){
