@@ -16,12 +16,8 @@
             </a>
 
             <nav>
-                <a href="#">
-                    <img src="images/menu.svg" alt="toggle menu" class="menu" id="menu">
-                </a>
-
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li id="exit" class="exit-btn hide desktop"><img src="images/close.svg" alt="exit menu"></li>
+                
+                <ul class="nav-links" id="nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">All About Staging</a></li>
@@ -29,7 +25,11 @@
                     <li><a href="#">About Us</a></li>
                 </ul>
             </nav>
-
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </header>
 
         <div>
@@ -110,10 +110,11 @@
     <div class="about-us">
 
         <h2>ABOUT US</h2>
-
-        <p>We believe creative designs are the result of meaningful dialogue and trust between the interior decorator and client. </p>
-        <p>In every project, we strive to fully understand our clients’ needs and apply their feedback and ideas into our designs. We do, however, use our expertise to ensure that the end result is as professional as possible. </p>
-        <p>Contact us today to see how we can get you started.</p>
+            <div class="about-us-text">
+                <p>We believe creative designs are the result of meaningful dialogue and trust between the interior decorator and client. </p>
+                <p>In every project, we strive to fully understand our clients’ needs and apply their feedback and ideas into our designs. We do, however, use our expertise to ensure that the end result is as professional as possible. </p>
+                <p>Contact us today to see how we can get you started.</p>
+            </div>
 
         <a href="#" class="cta">Contact Us</a>
     </div>
@@ -143,7 +144,7 @@
     <!-- Contact us -->
     <div class="contact-us">
 
-        <h2>CONTAACT US</h2> 
+        <h2>CONTACT US</h2> 
 
         <div class="text-info">
              <h3>Let`s get in touch</h3>
@@ -155,7 +156,7 @@
              <p>Oakland, CA 94621</p>
         </div>
 
-        <div class="social-icons">
+        <div class="social-icons-for-desktop">
             <ul>
                 <li><a href="#"><img src="images/linkedin.svg" alt="Linkedin lolo"></a></li>
             </ul>
@@ -177,23 +178,44 @@
                 </li>
                 <li>
                     <input type="text" name="userEmail" id="userEmail" placeholder="Email*">
+                </li>
+                <li>
                     <input type="text" name="userContactPhone" id="userContactPhone" placeholder="Contact phone">
                 </li>
                 <li>
                     <input type="text" name="userSubject" id="userSubject" placeholder="Subject*">
                 </li>
                 <li>
-                    <textarea name="Subject" id="Subject" cols="30" rows="10"></textarea>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your message"></textarea>
                 </li>
-                <li> <a href="#" class="cta">Send your message</a></li>
+                <li> 
+                    <a href="#" class="cta contact-cta" >Send your message</a>
+                </li>
             </ul>
         </div>
+
+
 
     </div>
 
     <footer>
+        <div class="social-icons-for-mobile">
+            <ul>
+                <li><a href="#"><img src="images/linkedin.svg" alt="Linkedin lolo"></a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="images/instagram1.svg" alt="Instagram logo"></a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="images/facebook.svg" alt="Facebook logo"></a></li>
+            </ul>
+        </div>
+
         <p>©2020 by Studio M Staging.</p>
     </footer>
+
+    <script src="humMenu.js"></script>
+
 </body>
 
 </html>
