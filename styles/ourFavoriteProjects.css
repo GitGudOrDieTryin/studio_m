@@ -1,0 +1,24 @@
+
+/* OUR FAVORITE PROJECTS */
+
+.our-favorite-projects {
+    margin: 64px 0 0 0;
+}
+
+.our-favorite-projects ul li {
+    
+    padding: 32px 0; 
+    text-align: center;
+}
+
+.our-favorite-projects ul li h3 {
+padding-top: 16px;
+}
+
+.our-favorite-projects ul li p {
+padding-top: 8px;
+}
+
+.our-favorite-projects ul li img {
+    width: 100%;
+}

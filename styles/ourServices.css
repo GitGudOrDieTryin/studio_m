@@ -1,0 +1,24 @@
+/* OUR SERVICES */
+
+.our-services ul{
+    margin: 16px 0;
+}
+
+.our-services h2 {
+    margin-bottom: 32px;
+}
+
+.our-services ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.our-services ul li h4 {
+    margin: 16px 0 8px 0;
+}
+
+.our-services ul li p {
+    margin-bottom: 16px;
+}

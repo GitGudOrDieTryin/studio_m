@@ -1,0 +1,95 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Montserrat';
+    padding: 0 16px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.0025em;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.0015em;  
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    /* Body 1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+/* or 144% */
+
+text-align: center;
+letter-spacing: 0.005em;
+margin: 0;
+padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    width: 100%;
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 6px 0 6px 8px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 0 6px 8px;
+    margin: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    
+}
+
+.cta {
+    letter-spacing: 0.0225em;
+    font-weight: 600;
+    font-size: 1.125em;
+    text-decoration: none;
+    padding: 12px 24px;
+    color: white;
+    background-color: #1E1E1E;
+}

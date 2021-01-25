@@ -1,0 +1,47 @@
+/* HERO SPACE */
+
+.hero-space {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    left: -16px;
+
+    background-image: url("../images/heroSpaceImage.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.hero-space header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: calc(100vw - 32px);
+    height: 52px;
+    left: 16px;
+    top: 16px;
+}
+
+.hero-space div h1{
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 4em;
+    margin-bottom: 128px;
+}
+.hero-space div a  {
+    color: #1E1E1E;
+    background-color: white;
+}
