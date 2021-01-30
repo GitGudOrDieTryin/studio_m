@@ -44,4 +44,19 @@
         background-image: url('../images/close.svg');
     }
 
+    .feaatured-listing-img2 {
+        display: none;
+    }
+
+    .social-icons-for-desktop {
+        display: none;
+    }
+
+    .text-info h3 {
+        display: none;
+    }
+
+    .text-info > :last-child {
+        margin-bottom: 48px;
+    }
 }
