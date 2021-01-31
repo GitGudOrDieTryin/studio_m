@@ -59,4 +59,9 @@
     .text-info > :last-child {
         margin-bottom: 48px;
     }
+
+    .featuredListingContent-desktop {
+        display: none;
+    }
+
 }

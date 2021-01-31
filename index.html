@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio M Staging</title>
+
+
+
     <link rel="stylesheet" href="styles/main.css">
+
 </head>
 <body>
     <!-- Hero space -->
@@ -79,7 +83,7 @@
             <ul class="featured-listing-info">
 
                 <li>
-                    <h3>45 Bartlett St, SF</h3>
+                    <h3 id="test">45 Bartlett St, SF</h3>
                 </li>
                 <li>
                     <p>2 Bedrooms</p>
@@ -88,55 +92,36 @@
                     <p>1 Bath</p>
                 </li>  
                 <li>
-                    <a href="#" class="cta">Learn more</a>
+                    <a href="#" class="cta" >Learn more</a>
                 </li>  
                 
             </ul>
+            <div class="slider" id="canvas">
 
-            <div class="slider-item">
-                <div class="featuredListingContent-mobile">
-                    <img src="images/featuredListing1-1.jpg" alt="big image">
-                </div>
-    
-                <div class="featuredListingContent-desktop">
-                    <img src="images/featuredListing1-2.jpg" alt="small image 1">
-                    <img src="images/featuredListing1-3.jpg" alt="small image 2">
-                    <img src="images/featuredListing1-4.jpg" alt="small image 3">
-                </div>
-            </div>
+                <div class="featuredListingContent-mobile, big-image"> </div>
+                    
+                    <ul class="featuredListingContent-desktop">
+                        <li>
+                            <div class="small-image1">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="small-image2">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="small-image3">
+                            </div>
+                        </li>
+                    </ul>
+            </div> 
 
-            <div class="slider-item">
-                <div class="featuredListingContent-mobile">
-                    <img src="images/featuredListing1-5.jpg" alt="big image">
+                <div class="featured-listing-selector"> 
+                    <img src="images/Ellipse1.svg" alt="selected item" class="selector">
+                    <img src="images/Ellipse2.svg" alt="unselected item" class="selector">
+                    <img src="images/Ellipse2.svg" alt="unselected item" class="selector">
                 </div>
-    
-                <div class="featuredListingContent-desktop">
-                    <img src="images/featuredListing1-6.jpg" alt="small image 1">
-                    <img src="images/featuredListing1-7.jpg" alt="small image 2">
-                    <img src="images/featuredListing1-8.jpg" alt="small image 3">
-                </div>
-            </div>
-
-            <div class="slider-item">
-                <div class="featuredListingContent-mobile">
-                    <img src="images/featuredListing1-9.jpg" alt="big image">
-                </div>
-    
-                <div class="featuredListingContent-desktop">
-                    <img src="images/featuredListing1-10.jpg" alt="small image 1">
-                    <img src="images/featuredListing1-11.jpg" alt="small image 2">
-                    <img src="images/featuredListing1-12.jpg" alt="small image 3">
-                </div>
-            </div>
-
-
-            <div class="featured-listing-selector">
-                
-                <img src="images/Ellipse2.svg" alt="selected item">
-                <img src="images/Ellipse2.svg" alt="unselected item">
-                <img src="images/Ellipse2.svg" alt="unselected item">
-            </div>
-
+             
         </div>
     </div>
     
@@ -248,7 +233,8 @@
         <p>©2020 by Studio M Staging.</p>
     </footer>
 
-    <script src="humMenu.js"></script>
+    <script src="scripts/humMenu.js"></script>
+    <script src="scripts/slider.js"></script>
 
 </body>
 

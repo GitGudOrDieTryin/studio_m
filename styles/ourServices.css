@@ -22,3 +22,7 @@
 .our-services ul li p {
     margin-bottom: 16px;
 }
+
+.our-services ul li img {
+    width: 100%;
+}
