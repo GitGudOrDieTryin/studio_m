@@ -64,4 +64,17 @@
         display: none;
     }
 
+    .sliderBigImage {
+        width: calc(100vw - 32px);
+        height: calc(100vw - 32px);
+        margin-right: 16px;
+        pointer-events: none;
+    }
+
+    .big-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }

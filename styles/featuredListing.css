@@ -69,27 +69,25 @@
     padding: 0 15px;
 }
 
-.big-image {
-    height: 0;
-    width: 100%;
-    padding-bottom: 100%;
-    background-image: url('../images/featuredListing1-1.jpg');
-    background-size: cover; 
-}
+
 
 .selector1, .selector2, .selector3 {
     cursor: pointer;
 }
 
-.big-image.selector-1 {
-    background-image: url('../images/featuredListing1-1.jpg');
+.slider.position-1 {
+    left: 0px;
+    transition: 0.3s;
 }
 
-.big-image.selector-2 {
-    background-image: url('../images/featuredListing1-5.jpg');
+.slider.position-2 {
+    left: calc(-100vw + 16px);
+    transition: 0.3s;
 }
 
-.big-image.selector-3 {
-    background-image: url('../images/featuredListing1-9.jpg');
+.slider.position-3 {
+    left: calc(-200vw + 32px);
+    transition: 0.3s;
 }
+
 
