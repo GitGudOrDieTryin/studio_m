@@ -12,6 +12,7 @@ selectors[0].classList.toggle('active');
 generateImages();
 eventsInicialization();
 
+//adding click and touch events for the slider.
 function eventsInicialization() {
 
     for (let i = 0; i < selectors.length; i++){
@@ -39,6 +40,8 @@ function eventsInicialization() {
 
 }
 
+// calculates the direction of the swipe and assigns new 
+// sliderIndex.
 function swipe(){
     if(swipeStartX - swipeEndX > 0 && selectionIndex < 2){
         selectionIndex++;
@@ -47,6 +50,7 @@ function swipe(){
     }
 }
 
+// changing slides in coherence with sliderIndex.
 function slideChange() {
     switch(selectionIndex) {
         case 0:
@@ -70,6 +74,9 @@ function slideChange() {
     }
 }
 
+// this function is creating img tags, putting them as 
+// a childs to the slider in DOM and giving them src.
+// Also creating classes for them so that css can work with them.
 function generateImages(){
     let bigImage1 = document.createElement("img");
     bigImage1.src = '../images/featuredListing1-1.jpg';
@@ -148,16 +155,20 @@ function generateImages(){
     document.querySelector(".smallImagesHolder3").appendChild(smallImage9);
 }
 
+
+
+
 //All of this crap below was used for testing
 
-let button = document.getElementById('test');
+//let button = document.getElementById('test');
 
 //window.addEventListener('resize', e => console.log(e.target.innerWidth));
 
-
+/*
 button.addEventListener('click', () => {
     console.log( selectionIndex ) 
     console.log( swipeStartX ) 
     console.log( swipeEndX ) 
 
 });
+*/
