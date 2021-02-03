@@ -1,47 +1,95 @@
 /* HERO SPACE */
 
 .hero-space {
-
     width: 100vw;
     height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-
+    align-content: center;
     position: relative;
-    left: -16px;
 
     background-image: url("../images/heroSpaceImage.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 
 .hero-space header {
+    align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-
+    width: 1200px;
     position: absolute;
-    width: calc(100vw - 32px);
     height: 52px;
-    left: 16px;
     top: 16px;
+}
+
+.hero-space div {
+    margin: auto;
+    padding: 0;
 }
 
 .hero-space div h1{
     color: white;
     font-family: 'Playfair Display';
-    font-size: 4em;
-    margin-bottom: 128px;
+    font-size: 6em;
+    margin: 0 0 32px 0;
 }
 .hero-space div a  {
     color: #1E1E1E;
     background-color: white;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: table;
+    text-align: center;
+}
+
+nav ul li {
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 4px;
+    position: relative;
+    margin-left: 48px;
+}
+
+nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+}
+
+nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.hero-space div > a:hover {
+    background-color: #e0ebff;
+    transition: 0.3s;
 }

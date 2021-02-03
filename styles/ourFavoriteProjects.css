@@ -1,12 +1,21 @@
-
-/* OUR FAVORITE PROJECTS */
-
 .our-favorite-projects {
-    margin: 64px 0 0 0;
+    width: 1200px;
+    margin-top: 128px;
+    align-self: center;
+}
+
+.our-favorite-projects ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .our-favorite-projects ul li {
-    
+    width: 360px;
+}
+
+.our-favorite-projects ul li {
+        
     padding: 32px 0; 
     text-align: center;
 }
@@ -17,8 +26,4 @@ padding-top: 16px;
 
 .our-favorite-projects ul li p {
 padding-top: 8px;
-}
-
-.our-favorite-projects ul li img {
-    width: 100%;
 }

@@ -1,5 +1,19 @@
 
 @media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        font-family: 'Montserrat';
+        padding: 0 16px;
+    }
+
+    .hero-space div h1{
+        color: white;
+        font-family: 'Playfair Display';
+        font-size: 4em;
+        margin-bottom: 128px;
+    }
+
     nav {
         position: absolute;
         height: 100vh;
@@ -77,4 +91,165 @@
         justify-content: center;
     }
 
+    .our-favorite-projects {
+        display: flex;
+        flex-direction: column;
+        margin: 64px 0 0 0;
+    }
+    
+    .our-favorite-projects ul li {
+        
+        padding: 32px 0; 
+        text-align: center;
+    }
+    
+    .our-favorite-projects ul li h3 {
+    padding-top: 16px;
+    }
+    
+    .our-favorite-projects ul li p {
+    padding-top: 8px;
+    }
+    
+    .our-favorite-projects ul li img {
+        width: 100%;
+    }
+
+    h1 {
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.0025em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.0015em;  
+        margin: 0;
+        padding: 0;
+    }
+    
+    p {
+        /* Body 1 */
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    
+    text-align: center;
+    letter-spacing: 0.005em;
+    margin: 0;
+    padding: 0;
+    }
+
+    .featured-listing-content {
+        position: relative;
+        padding: 32px 0;
+        margin: 32px 0;
+    }
+    
+    .cyan-bg {
+        background-color: #BCF6FB;
+        position: absolute;
+        z-index: -1;
+        margin: 0;
+        width: 100%;
+        right: -25%;
+        top:0;
+        bottom:0;
+    }
+    
+    .featured-listing {
+        margin: 32px 0 0 0;
+        position: relative; 
+        
+    }
+    
+    .featured-listing-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0 0 24px 0;
+    }
+    
+    
+    .featured-listing-info li{
+        margin-bottom: 24px;
+    }
+    
+    .featured-listing-info li:nth-child(4){
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .slider {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .slider-item {
+        width: 100%;
+        margin-right: 16px;
+    }
+    
+    .featuredListingContent-mobile img {
+        width: calc(100vw - 32px);
+    }
+    
+    
+    .featured-listing-selector {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 32px 0 0 0;
+    }
+    .featured-listing-selector img {
+        padding: 0 15px;
+    }
+    
+    
+    
+    .selector1, .selector2, .selector3 {
+        cursor: pointer;
+    }
+    
+    .slider.position-1 {
+        left: 0px;
+        transition: 0.3s;
+    }
+    
+    .slider.position-2 {
+        left: calc(-100vw + 16px);
+        transition: 0.3s;
+    }
+    
+    .slider.position-3 {
+        left: calc(-200vw + 32px);
+        transition: 0.3s;
+    }
+    .small-image {
+        display: none;
+    }
 }

@@ -6,7 +6,9 @@ body {
     overflow-x: hidden;
     margin: 0;
     font-family: 'Montserrat';
-    padding: 0 16px;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
 }
 
 h1 {
@@ -17,8 +19,8 @@ h2 {
     font-family: Playfair Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 34px;
+    line-height: 45px;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.0025em;
