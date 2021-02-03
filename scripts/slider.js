@@ -7,6 +7,8 @@ let selectionIndex = 0;
 let swipeStartX = 0;
 let swipeEndX = 0;
 
+selectors[0].classList.toggle('active');
+
 generateImages();
 eventsInicialization();
 
@@ -15,6 +17,10 @@ function eventsInicialization() {
     for (let i = 0; i < selectors.length; i++){
         selectors[i].addEventListener('click', () => {
             selectionIndex = i;
+            for (let j = 0; j < selectors.length; j++){
+                selectors[j].classList.remove('active');
+            }
+            selectors[i].classList.add('active');
             slideChange();
         });
     }
@@ -144,14 +150,14 @@ function generateImages(){
 
 //All of this crap below was used for testing
 
-//let button = document.getElementById('test');
+let button = document.getElementById('test');
 
 //window.addEventListener('resize', e => console.log(e.target.innerWidth));
 
-/*
+
 button.addEventListener('click', () => {
     console.log( selectionIndex ) 
     console.log( swipeStartX ) 
     console.log( swipeEndX ) 
 
-});*/
+});

@@ -20,12 +20,12 @@
 .cyan-bg {
     background-color: #BCF6FB;
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     margin: 0;
     width: 100%;
     right: -35%;
     top:0;
-    bottom: -632px;
+    bottom: -584px;
 }
 
 .featured-listing-selector {
@@ -36,13 +36,26 @@
     padding: 0px;
     margin: 32px 0 0 0;
     position: absolute;
-    bottom: -32px;
+    bottom: -556px;
+    left: 43%;
     align-self: center;
 }
 
 .selector {
-    padding: 0 15px;
+
+    margin: 0 15px;
     cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid#1E1E1E;
+    width: 22px;
+    height: 22px;
+}
+
+.selector.active{
+    background: #1E1E1E;
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
 }
 
 .big-image {
@@ -51,16 +64,22 @@
     flex-direction: row;
     top: 125px;
     left: 0;
+    z-index: -1;
 }
 
-.small-image {
-
+.small-image{
+    z-index: -2;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 540px;
+    top: 125px;
 }
 
 .sliderBigImage{
     width: 524px;
     height: 524px;
-    margin-right: 600px;
+    margin-right: 100vw;
 }
 
 .sliderSmallImage{
@@ -70,42 +89,58 @@
 }
 
 .smallImagesHolder1, .smallImagesHolder2, .smallImagesHolder3 {
-    position: absolute;
-    left: 540px;
-    top: 125px;
-    margin-right: 650px;
+    position: relative;
+    margin-right: calc(100vw + 524px - 240px);
     display: flex;
     flex-direction: column;
 }
 
 .featured-listing-info {
     position: absolute;
-    left: 796px;
+    left: 840px;
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
+    height: 524px;
+}
+
+.featured-listing-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 130px;
+    justify-content: space-between;
+}
+
+.featured-listing-info .cta{
+    position: absolute;
+    bottom: 0;
 }
 
 
 
 
+.slider {
+    position: absolute;
+    width: 1200px;
+    height: 524px;
+    top: 0;
+}
 
 
-
-/*
 .slider.position-1 {
     left: 0px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .slider.position-2 {
-    left: calc(-100vw + 16px);
-    transition: 0.3s;
+    left: calc(-100vw - 524px);
+    transition: 0.4s;
 }
 
 .slider.position-3 {
-    left: calc(-200vw + 32px);
-    transition: 0.3s;
+    left: calc(-200vw - 2 * 524px);
+    transition: 0.4s;
 }
 
-*/
+
